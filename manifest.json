@@ -1,0 +1,35 @@
+{
+  "name": "Better Blackboard Learn",
+  "description": "A feature-rich extension for Blackboard Learn.",
+  "version": "1.0.1",
+  "manifest_version": 3,
+  "permissions": [
+    "storage"
+  ],
+  "icons": {
+    "16": "icons/BbOrangeGradient16.png",
+    "48": "icons/BbOrangeGradient48.png",
+    "128": "icons/BbOrangeGradient128.png"
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "icons/BbOrangeGradient16.png",
+      "48": "icons/BbOrangeGradient48.png",
+      "128": "icons/BbOrangeGradient128.png"
+    }
+  },
+  "options_page":"options/options.html",
+  "background": {
+    "service_worker": "options/background.js"
+  },
+  "content_scripts": [
+    {
+        "matches": [
+            "https://*.blackboard.com/*"
+        ],
+        "js": ["content/content.js"],
+        "run_at": "document_start"
+    }
+  ]
+}

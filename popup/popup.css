@@ -1,0 +1,84 @@
+/* Main Background and Container */
+body {height: 370px; width: 250px; font-family: 'Wix Madefor Text', sans-serif; background-color: #1f1f1f;}  
+#gradient {height: 500px;width: calc(100% + 30px);margin-left: -15px;position: absolute;z-index: -1;opacity: .6;top: -230px;background: radial-gradient(at 50% 0%, hsla(283, 94%, 45%, 0.8) 0px, transparent 60%), radial-gradient(at 90% 0%, hsla(291, 81%, 39%, 0.8) 0px, transparent 60%), radial-gradient(at 10% 0%, hsla(285, 81%, 33%, 0.8) 0px, transparent 60%),linear-gradient(to bottom, hsla(30, 100%, 50%, 0.5), transparent);}
+#title {color: white; font-size: 20px; top: 10%; left: 10%; margin: 0px; border: 0px;}
+.BB-logo {width: 34px; position: absolute; bottom: 88%; right: 5%;}
+
+/* Standard Tag Style */
+button {background-color: #474646; color: white; padding: 8px 16px; border: none; cursor: pointer; transition: background-color 0.3s ease; text-align: center; border-radius: 5%;}
+button:hover {background-color: #757272;}
+input {background-color: #0c0c0c; color: white;}
+
+/* Settings Buttons on Main Page */
+#main-options {display:flex; justify-content: center; text-align: center;}
+#dark-theme-button {position: absolute; height: 45px; width: 55%; top: 24%; left: 50%; transform: translate(-50%, -50%); padding-left: 30px; border-radius: 5px;}
+.dark-theme button svg {fill: white; height: 50%; width: 50%; position: absolute; left: -13px; top: 50%; transform: translateY(-50%);}
+#custom-cards-button {position: absolute; padding-bottom: 10px; height: 100px; width: 100px; top: 44%; left: 71%; transform: translate(-50%, -50%);}
+.custom-cards svg {fill: white; height: 20%; width: 20%; position: absolute; left: 50%; top: 80%; transform: translate(-50%, -50%);}
+#custom-themes-button {position: absolute; padding-bottom: 10px; height: 100px; width: 100px; top: 71%; left: 29%; transform: translate(-50%, -50%); text-align: center;}
+.custom-themes svg {fill: white; height: 20%; width: 20%; position: absolute; left: 50%; top: 80%; transform: translate(-50%, -50%);}
+#custom-fonts-button {position: absolute; padding-bottom: 10px; height: 100px; width: 100px; top: 71%; left: 71%; transform: translate(-50%, -50%); text-align: center;}
+.custom-fonts svg {height: 20%; width: 20%; position: absolute; left: 50%; top: 80%; transform: translate(-50%, -50%);}
+#preset-themes-button {position: absolute; padding-bottom: 10px; height: 100px; width: 100px; top: 44%; left: 29%; transform: translate(-50%, -50%); text-align: center;}
+.preset-themes svg {fill: white; height: 20%; width: 20%; position: absolute; left: 50%; top: 80%; transform: translate(-50%, -50%);}
+#report-issue-button {position: absolute; height: 45px; width: 45%; top: 92%; left: 50%; padding-left: 35px; transform: translate(-50%, -50%); text-align: center;}
+#report-issue-button svg {position: absolute; left: 10px; top: 50%; transform: translateY(-50%);}
+
+/* Custom Course Cards Page */
+#card-options {display:none;}
+#custom-course-header {position: absolute; bottom: 76%; left: 50%; transform: translate(-50%, -50%); font-size: 28px; color: white; white-space: nowrap;}
+#custom-banner-header {position: absolute; top: 30%; left: 50%; transform: translate(-50%, -50%); font-size: 20px; padding: 2px; border-radius: 3px; white-space: nowrap; color: white;}
+#custom-name-header {position: absolute; top: 55%; left: 50%; transform: translate(-50%, -50%); font-size: 20px; padding: 2px; border-radius: 3px; white-space: nowrap; color: white;}
+#card-options-select {position: absolute; top: 22%; left: 50%; height: 40px; width: 150px; transform: translate(-50%, -50%); background-color: #0c0c0c; color: white; padding: 8px 2px;border-radius: 3px; text-align: center;}
+option {text-align: center; width: 40px;}
+#card-options-link {position: absolute; top: 43%; left: 50%; height: 30px; width: 180px; transform: translate(-50%, -50%); padding: 2px; background: #000000; border-radius: 3px; border: none;}
+#card-options-name {position: absolute; top: 68%; left: 50%; height: 30px; width: 180px; transform: translate(-50%, -50%); padding: 2px; background: #000000; border-radius: 3px; border: none;}
+#custom-image-text {position: absolute; top: 47%; left: 50%; transform: translate(-50%, -50%); color: gray; white-space: nowrap;}
+#custom-name-text {position: absolute; top: 72%; left: 50%; transform: translate(-50%, -50%); color: gray; white-space: nowrap}
+#save-banner-options {position: absolute; top: 92%; left: 72%; transform: translate(-50%, -50%); width: 40%; padding: 2px 8px;}
+#reset-banner-options {position: absolute; top: 92%; left: 28%; transform: translate(-50%, -50%); width: 40%; padding: 2px 8px; background: red;}
+
+/* Custom Themes Page */
+#custom-theme-options {display: none; text-align: center;}
+#custom-theme-header {position: absolute; bottom: 76%; left: 50%; transform: translate(-50%, -50%); font-size: 28px; color: white; white-space: nowrap;}
+#remove-custom-theme-button {position: absolute; top: 93%; left: 28%; transform: translate(-50%, -50%); width: 40%; padding: 2px 8px; background: red;}
+#save-custom-theme-button {position: absolute; top: 93%; left: 72%; transform: translate(-50%, -50%); width: 40%; padding: 2px 8px;}
+
+/* Preset Themes Page */
+#preset-theme-options {display: none; text-align: center;}
+#preset-themes-header {position: absolute; bottom: 79%; left: 50%; transform: translate(-50%, -50%); font-size: 26px; color: white;}
+#luna-button {background: #5a3a7e; color: #f67599;}
+#nightfall-button {background: #232323; color: #d82934;}
+#midnight-button {background: #030f28; color: orange;}
+#cyberspace-button {background: #030f28; color: #00ce7c;}
+#joker-button {background: #321a47; color: #99de1e;}
+#horizon-button {background: #1f1f1f; color: #f2c17b;}
+#melon-button {background: #1f4437; color: #d6686f;}
+#botanical-button {background: #7b9c98; color: #101e1c;}
+.theme-buttons {position: relative; top: 50px; width: 100px; height: 50px; margin: 2px 2px; text-align:center;}
+#remove-preset-theme-button {position: absolute; top: 93%; left: 28%; transform: translate(-50%, -50%); width: 40%; padding: 2px 8px; background: red;}
+#save-preset-theme-button {position: absolute; top: 93%; left: 72%; transform: translate(-50%, -50%); width: 40%; padding: 2px 8px;}
+
+/* Custom Fonts */
+#font-options {display: none; text-align: center;}
+#custom-fonts-header {position: relative; bottom: 10px; color: white; font-size: 24px;}
+#custom-font-buttons button {position: relative; bottom: 20px; width: 110px; height: 45px !important; margin: 2px 2px;}
+#remove-font {position: absolute; top: 93%; left: 28%; transform: translate(-50%, -50%); width: 40%; padding: 2px 8px; background: red;}
+#save-font-options {position: absolute; top: 93%; left: 72%; transform: translate(-50%, -50%); width: 40%; padding: 2px 8px;}
+
+/* Report Issue */
+#report-issue-options {display: none; text-align: center;}
+#report-issue-header {color: white; font-size: 26px; text-wrap:wrap;} 
+#report-issue-text {color: white; font-size: 16px; text-wrap:wrap; text-align: center; line-height: 25px;} 
+#return-to-menu-options {position: absolute; top: 90%; left: 50%; transform: translate(-50%, -50%);}
+
+/* Color Picker */
+.palette-selection {position: relative; width: 200px; margin-bottom: 40px; top: 20px;}
+.color-input {position: absolute; left: 26px; bottom: 12px; height: 40px; width: 40px; border: none; background: var(--inputbg); border-radius: 4px;}
+.color-input::-webkit-color-swatch, .color-input::-moz-color-swatch {border-radius: 4px; border: 7px solid #000000;}
+.color-text {position: absolute; left: 70px; bottom: 17px; height: 25px; width: 100px; background: #000; border-radius: 3px; border: 1px solid #ccc; padding: 2px; color: #fff;}
+.color-button {position: absolute; left: 183px; bottom: 15px; height: 32px; width: 32px; border-radius: 4px; padding: 0; text-align: center; background-color: black; border: 1px solid white; color: #fff}
+.primary-palette {top: 110px;}
+.secondary-palette {top: 135px;}
+.sidebar-palette {top: 160px;}
+.palette-selection h2 {position: relative; left: 20px; bottom: 50px; color: white; font-size: 20px; text-align: center;}
